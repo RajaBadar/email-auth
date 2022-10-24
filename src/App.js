@@ -46,11 +46,11 @@ const signIn = () =>{
   return (
     <div className='main'>
     <div className="App">
-       <input type="email" placeholder='please add valid email' onChange={(e) =>setEmail(e.target.value)}/>
-       <input type="password" placeholder='please enter password' onChange={(e) =>setPassword(e.target.value)}/>
+       <input className="input" type="email" placeholder='please add valid email' onChange={(e) =>setEmail(e.target.value)}/>
+       <input className="input" type="password" placeholder='please enter password' onChange={(e) =>setPassword(e.target.value)}/>
 
-       <button onClick={signUp}>Create Account</button>
-       <button onClick={signIn}> Sign in</button>
+       <button className="btn" onClick={signUp}>Create Account</button>
+       <button className="btn" onClick={signIn}> Sign in</button>
     </div>
     </div>
   );
